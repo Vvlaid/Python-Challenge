@@ -2,6 +2,8 @@ Welcome to my turn in for the Python Challenge!
 
 Tutor helped me start PyBank and I finished it while PyPoll was all me, the tutoring session aided more than enough.
 
+![image](https://github.com/Vvlaid/Python-Challenge/assets/166451251/bbb6c334-c158-4930-90c8-2c37dd9e9d62)
+
 
 # Python Challenge for Module 3:
 
@@ -44,13 +46,7 @@ The greatest decrease in profits (date and amount) over the entire period
 Your analysis should align with the following results:
 
 
-Financial Analysis
-----------------------------
-Total Months: 86
-Total: $22564198
-Average Change: $-8311.11
-Greatest Increase in Profits: Aug-16 ($1862002)
-Greatest Decrease in Profits: Feb-14 ($-1825558)
+![image](https://github.com/Vvlaid/Python-Challenge/assets/166451251/82ec8a19-4fef-4027-b21b-968bae6b2bbf)
 
 
 In addition, your final script should both print the analysis to the terminal and export a text file with the results.
@@ -74,16 +70,8 @@ The winner of the election based on popular vote
 Your analysis should align with the following results:
 
 
-Election Results
--------------------------
-Total Votes: 369711
--------------------------
-Charles Casper Stockham: 23.049% (85213)
-Diana DeGette: 73.812% (272892)
-Raymon Anthony Doane: 3.139% (11606)
--------------------------
-Winner: Diana DeGette
--------------------------
+![image](https://github.com/Vvlaid/Python-Challenge/assets/166451251/dc35981b-0e7e-442f-a816-7b6dca37b448)
+
 
 
 In addition, your final script should both print the analysis to the terminal and export a text file with the results.
