@@ -28,11 +28,39 @@ with open(election_data, newline = "") as poll_data:
             candidates.append(candidate_name)
             candidate_votes[candidate_name] = 0
         
-        # Adding votes for Candidate when repeated
+        # Adding votes for Candidate when repeated in dataset
         candidate_votes[candidate_name] += 1
+
+    # Figuring out the percetage of votes per candidate
+    for candidate in candidate_votes:
+        votes = candidate_votes.get(candidate)
+        votes_percent = float(votes)/float(total_votes) * 100
+
+        # Condition for finding winning candidate
+        if (votes > winning_count):
+            winning_count = votes
+            winner = candidate
+
+        # Variable for all candidate voter count with percents
+        results = f"{candidate}: {votes_percent:.3f}% ({votes})"
+        print(results)
 
 # Print the results within the Terminal
 print("\nElection Results\n")
-print("-----------------------------------------\n")
+print("-----------------------------------------")
 print(f"Total Votes: {total_votes}")
-print(f"{candidate_votes}\n")
+print("-----------------------------------------")
+print(results)
+print("-----------------------------------------")
+print(f"Winner: {winner}")
+print(f"-------------------------------------------")
+
+with open('election_results', "w") as text:
+    text.write("\nElection Results \n \n"),
+    text.write("------------------------------------------- \n \n"),
+    text.write(f"Total Votes: {total_votes} \n \n"),
+    text.write("-------------------------------------------\n \n"),
+    text.write(f"{results}\n \n"),
+    text.write(f"-------------------------------------------\n \n"),
+    text.write(f"Winner: {winner}\n\n")
+    text.write(f"-------------------------------------------")
