@@ -1,7 +1,7 @@
 import csv
 
 # Path to file
-pybank_csv = r"Resources\budget_data.csv" 
+pybank_csv = r"PyBank\Resources\budget_data.csv" 
 
 
 # Opening file to then read it for the data within
