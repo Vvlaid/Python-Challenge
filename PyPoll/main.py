@@ -64,3 +64,6 @@ with open('election_results', "w") as text:
     text.write(f"-------------------------------------------\n \n"),
     text.write(f"Winner: {winner}\n\n")
     text.write(f"-------------------------------------------")
+
+
+# Confused on how to get "results" varible to print correctly within the terminal or text file.
