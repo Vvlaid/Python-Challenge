@@ -1,7 +1,7 @@
 import csv
 
 # Path to File using Relative Path
-election_data = r"PyPoll\Resources\election_data.csv"
+election_data = r"Resources\election_data.csv"
 
 # Varible, list, and dictionary for the requirements
 candidates = []
