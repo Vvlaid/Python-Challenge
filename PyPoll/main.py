@@ -50,7 +50,10 @@ print("\nElection Results\n")
 print("-----------------------------------------")
 print(f"Total Votes: {total_votes}")
 print("-----------------------------------------")
-print(results)
+for candidate in candidates:
+    votes = candidate_votes.get(candidate)
+    votes_percent = float(votes)/float(total_votes) * 100
+    print(f"{candidate}: {votes_percent:.3f}% ({votes})")
 print("-----------------------------------------")
 print(f"Winner: {winner}")
 print(f"-------------------------------------------")
@@ -60,10 +63,11 @@ with open('election_results', "w") as text:
     text.write("------------------------------------------- \n \n"),
     text.write(f"Total Votes: {total_votes} \n \n"),
     text.write("-------------------------------------------\n \n"),
+for candidate in candidates:
+    votes = candidate_votes.get(candidate)
+    votes_percent = float(votes)/float(total_votes) * 100
+    text.write(f"{candidate}: {votes_percent:.3f}% ({votes})")
     text.write(f"{results}\n \n"),
     text.write(f"-------------------------------------------\n \n"),
     text.write(f"Winner: {winner}\n\n")
     text.write(f"-------------------------------------------")
-
-
-# Confused on how to get "results" varible to print correctly within the terminal or text file.
